@@ -1,0 +1,11 @@
+<h1><%= @blogger.name %></h1>
+
+<h3>Total Likes: some number</h3>
+
+<h3> Featured Post Goes Here </h3>
+
+<% (1..5).each do |i| %>
+    <%= "#{i}. Destination #{i}" %><br><br>
+<% end %>
+
+<%= link_to "All Bloggers", bloggers_path %>

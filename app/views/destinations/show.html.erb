@@ -1,0 +1,11 @@
+<h1><%= @destination.name %></h1>
+
+<h3> Featured Post Goes Here </h3>
+
+<% (1..5).each do |i| %>
+    <%= "#{i}. Post #{i}" %><br><br>
+<% end %>
+
+<h4> Average Age of all unique blogger </h4>
+
+<%= link_to "All Destinations", destinations_path %>
